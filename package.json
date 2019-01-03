@@ -1,0 +1,53 @@
+{
+  "name": "nc-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.3.1",
+    "mongoose": "^4.5.7",
+    "nodemon": "^1.11.0",
+    "popper.js": "^1.14.6",
+    "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.7.0",
+    "react-image": "^1.5.1",
+    "react-js-pagination": "^3.0.2",
+    "react-scripts": "2.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "chai": "^3.5.0",
+    "chai-things": "^0.2.0",
+    "css-loader": "^2.1.0",
+    "jest": "^23.6.0",
+    "mocha": "^3.0.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "heroku-postbuild": "webpack --mode=production",
+    "build": "react-scripts build",
+    "test": "jest resources/test.js --notify",
+    "eject": "react-scripts eject",
+    "webpack": "webpack -d --watch",
+    "mockdata": "node server/FSdataImport.js",
+    "nodemon": "nodemon server/index.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
